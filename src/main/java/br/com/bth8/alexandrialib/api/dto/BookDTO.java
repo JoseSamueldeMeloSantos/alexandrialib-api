@@ -3,23 +3,12 @@ package br.com.bth8.alexandrialib.api.dto;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-
-import org.hibernate.annotations.CreationTimestamp;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import br.com.bth8.alexandrialib.domain.enums.Category;
 import br.com.bth8.alexandrialib.domain.model.Author;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -32,6 +21,7 @@ public class BookDTO {
 	
 	private String name;
 	
+	@JsonFormat(timezone = "dd/mm/yyyy")
 	@JsonProperty("release_date")
 	private LocalDate releaseDate;
 	

@@ -3,8 +3,6 @@ package br.com.bth8.alexandrialib.domain.enums;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import lombok.AllArgsConstructor;
-
 
 public enum Category {
 
