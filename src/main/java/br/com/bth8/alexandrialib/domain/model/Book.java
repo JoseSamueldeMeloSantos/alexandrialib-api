@@ -2,10 +2,11 @@ package br.com.bth8.alexandrialib.domain.model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Locale.Category;
+
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import br.com.bth8.alexandrialib.domain.enums.Category;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
