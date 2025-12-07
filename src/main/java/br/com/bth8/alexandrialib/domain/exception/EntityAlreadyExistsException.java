@@ -4,13 +4,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.CONFLICT)
-public class EntitAlreadyExistsException extends Exception{
+public class EntityAlreadyExistsException extends Exception{
 
-	public EntitAlreadyExistsException() {
+	public EntityAlreadyExistsException() {
 		super("EntitAlreadyExistsException");
 	}
 
-	public EntitAlreadyExistsException(String message) {
+	public EntityAlreadyExistsException(String message) {
 		super(message);
 	}
 }
